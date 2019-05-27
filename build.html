@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> PC Builder </title>
+    <link rel="icon" type="image/jpg" href="clouds.jpg">
+    <!-- JavaScript kod za drag and drop -->
+    <script src="main.js"></script>
+    <!-- U style tagu se nalazi cist css -->
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Home routuje na drugi html fajl i ostale divove po "id"-ju-->
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#build">Build</a></li>
+    </ul>
+
+    <!-- Kontejner koji drzi sve iteme u bodiju -->
+    <div class="grid-container item1">
+
+        <!-- Na ovom delu se nalazi Drag And Drop html kod, cije se komponente regulisu u css-u
+        a JS se nalazi u posebnom fajlu-->
+        <div class="grid-item item3">
+            
+            <!-- Ovde pocinje drag -->
+            <div id="build" class="grid-item item20">
+                <h2 style="text-align: center"> BUILD YOUR PC HERE </h2> 
+            </div>
+
+            <!-- Poziva JS funkcije kroz evente u tagu -->
+            <div id="target" class="grid-item item2 column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3 style="text-align: center"> Your PC is ready to be built </h3>
+            </div>
+
+            <div class="grid-item item4 column">
+
+                <div class="grid-item grid-area item5">
+
+                    <h3>Processors</h3>
+                    <div id="processor" class="grid-item item6">
+                        <img id="i7-7700k" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="i9-7900k" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="threadripper" class="element" src="clouds.jpg" draggable="true"
+                            ondragstart="drag(event)" width="128px">
+
+                        <img id="7-2700x" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item item7">
+                    <h3>Graphic Cards</h3>
+
+                    <div id="gpu" class="grid-item item8">
+                        <img id="gtx-1080" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="titan-v" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="rx-590" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="vega" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item item9">
+                    <h3>Motherboards</h3>
+
+                    <div id="motherboard" class="grid-item item10">
+                        <img id="drag7.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag8.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag9.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag10.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item item66">
+                    <h3>Napajanje</h3>
+
+                    <div id="motherboard" class="grid-item item67">
+                        <img id="drag11.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag12.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag13.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+
+                        <img id="drag14.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
+                            width="128px">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

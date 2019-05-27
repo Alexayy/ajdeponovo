@@ -1,0 +1,174 @@
+  /*CSS za ceo body HTML*/
+  body {
+      background:
+          radial-gradient(black 15%, transparent 16%) 0 0,
+          radial-gradient(black 15%, transparent 16%) 8px 8px,
+          radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+          radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+      background-color: #282828;
+      background-size: 16px 16px;
+      display: grid;
+      align-content: center;
+      grid-column-gap: 25px;
+      grid-row-gap: 10px;
+  }
+
+  /* CSS za kontejner */
+  .grid-container {
+      display: grid;
+      grid-column-gap: 25px;
+      grid-row-gap: 10px;
+      justify-content: space-evenly;
+  }
+
+  /* CSS za svaki div pojedinacno */
+  .grid-container>div {
+      text-align: left;
+      padding: 25px 0;
+      font-size: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  /* Headeri CSS */
+  h1, h2, h3 {
+      text-decoration: underline chocolate;
+      color: rgb(198, 198, 255);
+  }
+
+  /* Paragraf CSS */
+  p {
+      color: beige;
+  }
+
+  /* CSS za komponente koje se vuku */
+  .draggable {
+      grid-area: span;
+      border: 1px solid black;
+      width: 50px;
+      height: 20px;
+      float: right;
+      margin-right: 5px;
+      padding: 25%;
+  }
+
+  /* CSS za mesto gde se dropuje */
+  #target {
+      grid-area: span;
+      border: 10px solid #333333;
+      width: 640px;
+      height: 640px;
+      float: left;
+      padding: 15px;
+  }
+
+  /* ---------------------------- Pocetak CSS za NAV BAR ---------------------------- */
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: sticky;
+      background-color: transparent;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: dimgrey;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
+
+  .active {
+      background-color: rgb(63, 58, 50);
+  }
+  /* ---------------------------- Kraj CSSa za NAVBAR ---------------------------- */
+
+  /* CSS za specijalne komponente */
+
+  /* CSS za div koji drzi kutiju gde se dropuje */
+  .grid-item.item2 {
+      text-align: right;
+      float: left;
+      font-size: 25px;
+  }
+
+  /* CSS za div tag koji drzi draggable i dropbox komponente*/
+  .grid-item.item3 {
+      display: table-cell;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-size: 30px;
+  }
+
+  /* CSS za dgraggable komponente */
+  .grid-item.item4 {
+      display: table-cell;
+      padding: 0%;
+      float: right;
+      text-align: right;
+      font-size: 20px;
+  }
+
+  /* CSS koji centrira Headere */
+  .item13 {
+      text-align: center;
+  }
+
+  /* CSS koji se stara o kompletnom telu diva
+  koji drzi sve paragrafe */
+  .item12 {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+
+  /* CSS za formu */
+  input[type=text],
+  select,
+  textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  /* CSS za dugme SUBMIT */
+  .form {
+      padding: 10%;
+  }
+
+  input[type=submit] {
+      background-color: rgb(63, 58, 50);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  /* Mis preko submita menja boju */
+  input[type=submit]:hover {
+      background-color: #111;
+  }
+
+  /* pozadina i padding oko forma */
+  .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
