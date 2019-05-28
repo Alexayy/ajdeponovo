@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> PC Builder </title>
+
+    <!-- Ikonica pored titla na tabu -->
+    <link rel="icon" type="image/jpg" href="clouds.jpg">
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+
+    <style></style>
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="build.html">Build</a></li>
+    </ul>
+
+    <!-- Kontejner koji drzi sve iteme u bodiju -->
+    <div class="grid-container item1">
+
+        <!-- Forma -->
+        <div id="contact" class="grid-item form">
+            <h2 style="text-align: center"> Contact Us! </h2>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                <label for="mail">Email</label>
+                <input type="text" id="mail" name="email" placeholder="Your email...">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="serbia">Serbia</option>
+                <option value="bosni">Bosnia</option>
+                <option value="croatia">Croatia</option>
+                <option value="mntnegro">Monte Negro</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="macedonia">Macedonia</option>
+                <option value="romani">Romania</option>
+                <option value="hungary">Hungary</option>
+                <option value="russia">Russia</option>
+            </select>
+
+                <form method="post" action="mailto:aleksa.cakic@gmail.com"></form>
+                <label for="subject" actio>Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html

@@ -16,9 +16,9 @@
     <!-- Navbar Home routuje na drugi html fajl i ostale divove po "id"-ju-->
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#build">Build</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="build.html">Build</a></li>
     </ul>
 
     <!-- Kontejner koji drzi sve iteme u bodiju -->
@@ -27,74 +27,71 @@
         <!-- Na ovom delu se nalazi Drag And Drop html kod, cije se komponente regulisu u css-u
         a JS se nalazi u posebnom fajlu-->
         <div class="grid-item item3">
-            
+
             <!-- Ovde pocinje drag -->
             <div id="build" class="grid-item item20">
-                <h2 style="text-align: center"> BUILD YOUR PC HERE </h2> 
+                <h2 style="text-align: center"> Imate 3 opcije za Budget, Mid i High price range </h2>
             </div>
 
             <!-- Poziva JS funkcije kroz evente u tagu -->
             <div id="target" class="grid-item item2 column" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h3 style="text-align: center"> Your PC is ready to be built </h3>
+                <h3 style="text-align: center"> Vas racunar je spreman za gradnju </h3>
             </div>
 
             <div class="grid-item item4 column">
 
                 <div class="grid-item grid-area item5">
 
-                    <h3>Processors</h3>
+                    <h3>Procesori</h3>
                     <div id="processor" class="grid-item item6">
-                        <img id="i7-7700k" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="ryzen3" class="element" src="/assets/ryzen3.jpg" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="i9-7900k" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="ryzen5" class="element" src="/assets/ryzen5.jpg" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="threadripper" class="element" src="clouds.jpg" draggable="true"
-                            ondragstart="drag(event)" width="128px">
-
-                        <img id="7-2700x" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="ryzen7" class="element" src="/assets/ryzen7.jpg" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
                     </div>
 
                 </div>
 
                 <div class="grid-item item7">
-                    <h3>Graphic Cards</h3>
+                    <h3>Maticne</h3>
 
                     <div id="gpu" class="grid-item item8">
-                        <img id="gtx-1080" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="a320" class="element" src="/assets/a320.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="titan-v" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="b450" class="element" src="/assets/b450.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="rx-590" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
-
-                        <img id="vega" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="x470" class="element" src="/assets/x470.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
                     </div>
 
                 </div>
 
                 <div class="grid-item item9">
-                    <h3>Motherboards</h3>
+                    <h3>RAM</h3>
 
                     <div id="motherboard" class="grid-item item10">
-                        <img id="drag7.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="8gb" class="element" src="assets/8gb.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag8.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="16gb" class="element" src="assets/16gb.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag9.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="32gb" class="element" src="assets/32gb.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag10.3" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item item66">
+                    <h3>Graficke Kartice</h3>
+
+                    <div id="motherboard" class="grid-item item67">
+                        <img id="gtx1050ti" class="element" src="assets/1050ti.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
+
+                        <img id="rx570" class="element" src="/assets/rx570.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
+
+                        <img id="rtx2070" class="element" src="/assets/rtx2070.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
                     </div>
 
@@ -104,17 +101,26 @@
                     <h3>Napajanje</h3>
 
                     <div id="motherboard" class="grid-item item67">
-                        <img id="drag11.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="400w" class="element" src="assets/psu400.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag12.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="550w" class="element" src="assets/psu550.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag13.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                        <img id="750w" class="element" src="assets/psu750.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
 
-                        <img id="drag14.4" class="element" src="clouds.jpg" draggable="true" ondragstart="drag(event)"
-                            width="128px">
+                    </div>
+
+                </div>
+
+                <div class="grid-item item66">
+                    <h3>Kuciste</h3>
+
+                    <div id="motherboard" class="grid-item item67">
+                        <img id="lowc" class="element" src="assets/lowcase.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
+
+                        <img id="midc" class="element" src="assets/midcase.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
+
+                        <img id="highc" class="element" src="assets/highcase.png" draggable="true" ondragstart="drag(event)" width="128px" height="128px">
+
                     </div>
 
                 </div>
